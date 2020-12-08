@@ -1,0 +1,125 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+		#particles-js{
+			height:100vh;
+			background-color:black;
+		}
+		
+body{
+  background-color: #ddd;
+}
+.navbar-brand {
+     color: white;
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    padding-left: 11.5rem;
+    margin-right: 5rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2.5rem;
+    padding-left: .5rem;
+}
+}
+
+.btn-outline-dark {
+    color:black;
+    border-color:black;
+    margin-left: 0px;
+    margin-right: 40px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: black;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: grey;
+}
+#particles-js .particles-js-canvas-el {
+	transform: scale(1);
+    opacity: 1;
+    animation: appear 1.4s 1;
+    animation-fill-mode: forwards;
+}
+.panel {
+    font-family: 'Source Sans Pro';
+    font-size: 1.3em;
+    position: absolute;
+    z-index: 10;
+    width: 490px;
+    height: 250px;
+    background: #dcdde1;
+    top: 50%;
+    left: 50%;
+    margin: -110px 0 0 -250px;
+    padding: 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    z-index: 100;
+}
+.li1{
+font-size: 23px;
+}
+/*body{
+	min-width: 100%;
+	min-height: 100vh;
+	display:flex;
+	background:#ddd;
+}*/
+.mobile,.laptop,.tablet{
+    position:relative;
+    transform:scale(0.6);
+}
+.laptop{
+	width:400px;
+	height:250px;
+	border:15px solid #000;
+	border-bottom-width: 20px;
+}
+@media screen and (min-width: 992px) {
+  .laptop{
+    margin-left:-20px!important;
+  }
+}
+.laptop::before{
+	content:"";
+	width:500px;
+	height:25px;
+	background-color: #000;
+	position:absolute;
+	top:100%;
+ 	left:50%;
+    transform: translate(-50%);
+    margin-top: 20px;
+}
+.laptop::after{
+	content:"";
+	position:absolute;
+	width:120px;
+	height:10px;
+	background-color: #fff;
+	top:100%;
+	left:50%;
+	transform: translate(-50%);
+	margin:5px;
+}
+
+/*.example::-webkit-scrollbar {
+    display: none;
+}*/
+iframe{
+	height:100%;
+	width:100%;
+	border:none;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
